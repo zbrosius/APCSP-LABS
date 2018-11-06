@@ -3,7 +3,7 @@ function Ball(location, velocity, radius, col){
   this.loc = location;
   this.vel = velocity;
   this.rad = radius;
-  this.col = (50,155,255);
+  this.col = (0,0,255);
   this.acc = createVector(0,.1);
   this.run = function(){
   this.checkEdges();
@@ -12,10 +12,10 @@ function Ball(location, velocity, radius, col){
     }
 
   this.update = function(){
+  //  this.locX = this.locX + this.speedX;
+  //  this.locY = this.locY + this.speedY;
     this.loc.add(this.vel);
     this.vel.add(this.acc);
-
-
   }
 
   this.checkEdges = function(){

@@ -1,8 +1,8 @@
 
-function Ball(location, velocity, radius, col){
-  this.loc = location;
-  this.vel = velocity;
-  this.rad = radius;
+function Ball(loc, vel, rad, col){
+  this.loc = loc;
+  this.vel = vel;
+  this.rad = rad;
   this.col = (50,155,255);
   this.acc = createVector(0,.1);
   this.run = function(){
@@ -30,4 +30,12 @@ function Ball(location, velocity, radius, col){
     fill(this.col);
     ellipse(this.loc.x, this.loc.y, this.rad, this.rad);
   }
+}
+this.isColliding = function(){
+  if(this.loc.x > paddle.loc.x &&
+  this.loc.x < paddle.loc.x + paddle.w &&
+this.loc.y > paddle.loc.y &&
+this.loc.y < paddle.loc.y + paddle.h){
+  
+}
 }
