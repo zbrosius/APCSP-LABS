@@ -7,8 +7,8 @@ function setup() {
  cols = width/w;
  rows = height/w;
  cnv.position((windowWidth-width)/2, 30);
- frameRate(3.0);
- background(20,20,20);
+ frameRate(5.0);
+ background(0,0,0);
  snake = new Snake(createVector(width/2,height/2), createVector(1, 0), 2);
  apple = new Apple();
  apple.randomize();
